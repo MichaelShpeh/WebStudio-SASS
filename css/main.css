@@ -1,11 +1,39 @@
 @charset "UTF-8";
-:root {
-  --section-color: #2F303A;
-  --workers-color: #757575;
-  --button-color: #2196F3;
-  --text-color: #212121;
-  --background-color: #f5f4fa;
-  --color-background-overlay-img: rgba(47, 48, 58, 0.4);
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -1093,41 +1121,4 @@ body {
 
 .modal-form {
   width: 100%;
-}
-
-* {
-  text-decoration: none;
-  list-style: none;
-}
-
-body {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }/*# sourceMappingURL=main.css.map */
