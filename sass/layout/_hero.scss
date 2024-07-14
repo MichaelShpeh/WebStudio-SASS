@@ -6,7 +6,8 @@
     background-image:
         linear-gradient(var(--color-background-overlay-img),
             var(--color-background-overlay-img)),
-        url(../images/img1.jpg);
+        // url(../images/img1.jpg)
+    ;
     background-size: cover;
     background-color: var(--section-color);
 }
