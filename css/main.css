@@ -666,10 +666,6 @@ body {
   justify-content: space-between;
 }
 
-.workers__item {
-  width: 428px;
-}
-
 .workers__title {
   font-weight: 700;
   font-size: 36px;
