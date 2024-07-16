@@ -1,7 +1,6 @@
 .workers__list {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 .workers__item {
@@ -9,7 +8,6 @@
 }
 
 .workers__title {
-    /* font-family: "Roboto"; */
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -28,9 +26,11 @@
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     padding-bottom: 30px;
+    width: 270px;
 }
 
 .workers__text {
+    width: 270px;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
@@ -40,24 +40,21 @@
 }
 
 .workers__title--under {
-    /* font-family: "Roboto"; */
+    width: 270px;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
+    color: $workers-color;
 }
 
-.workers__title--under {
-    color: var(--workers-color);
-}
-
-.workers__item--social-media {
+.workers__list--social-media {
+    width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
     gap: 10px;
 }
 
@@ -77,7 +74,7 @@
 
 .workers__item--social-media:hover {
     fill: #fff;
-    background-color: var(--button-color);
+    background-color: $button-color;
 }
 
 .workers__link {
