@@ -660,51 +660,17 @@ body {
   opacity: 1;
 }
 
-.social-media-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin: 0 auto; */
-  gap: 10px;
-}
-
-.social-media-list-item {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  fill: #AFB1B8;
-  cursor: pointer;
-  transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-media-list-item:hover {
-  fill: #fff;
-  background-color: var(--button-color);
-}
-
-.social-media-list-link {
-  fill: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.workers-list {
+.workers__list {
   display: flex;
   justify-content: space-between;
   /* flex-wrap: wrap; */
 }
 
-.workers-list-item {
+.workers__item {
   width: 428px;
 }
 
-.workers-title {
+.workers__title {
   /* font-family: "Roboto"; */
   font-weight: 700;
   font-size: 36px;
@@ -719,14 +685,14 @@ body {
   padding-bottom: 94px;
 }
 
-.workers-title-item {
+.workers__item {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   padding-bottom: 30px;
 }
 
-.workers-text {
+.workers__text {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -735,7 +701,7 @@ body {
   margin-top: 30px;
 }
 
-.underworkers–title {
+.workers__title--under {
   /* font-family: "Roboto"; */
   font-weight: 400;
   font-size: 16px;
@@ -745,8 +711,42 @@ body {
   margin-bottom: 30px;
 }
 
-.underworkers-title {
+.workers__title--under {
   color: var(--workers-color);
+}
+
+.workers__item--social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  gap: 10px;
+}
+
+.workers__item--social-media {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #AFB1B8;
+  cursor: pointer;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.workers__item--social-media:hover {
+  fill: #fff;
+  background-color: var(--button-color);
+}
+
+.workers__link {
+  fill: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo-white {
