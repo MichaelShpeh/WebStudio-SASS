@@ -377,8 +377,7 @@ body {
   padding-bottom: 94px;
 }
 
-.permanent-clients {
-  font-family: var(--font-family);
+.clients__list {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -387,13 +386,13 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.clients-list-item {
+.clients__item {
   margin-right: 30px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -408,7 +407,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-item:hover {
+.clients__item:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
   width: 170px;
