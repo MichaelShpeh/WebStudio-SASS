@@ -4,10 +4,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image:
-        linear-gradient(var(--color-background-overlay-img),
-            var(--color-background-overlay-img)),
-        // url(../images/img1.jpg)
-    ;
+        linear-gradient($color-background-overlay-img,
+            $color-background-overlay-img),
+        url(../images/img1.jpg);
     background-size: cover;
     background-color: var(--section-color);
 }
@@ -32,7 +31,7 @@
 
 .hero__button {
     font-family: "Roboto";
-    background-color: var(--button-color);
+    background-color: $button-color;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;

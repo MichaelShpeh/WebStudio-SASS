@@ -73,7 +73,7 @@ body {
 }
 
 .header__logo {
-  color: var(--button-color);
+  color: #2196F3;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -108,18 +108,18 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: #212121;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__link:hover {
-  color: var(--button-color);
+  color: #2196F3;
 }
 
 .header__link--active {
-  color: var(--button-color);
+  color: #2196F3;
   position: relative;
   transition-property: all;
   transition-duration: 250ms;
@@ -136,7 +136,7 @@ body {
   border: none;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--button-color);
+  background-color: #2196F3;
   display: block;
 }
 
@@ -164,7 +164,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: var(--workers-color);
+  color: #757575;
   display: flex;
   align-items: center;
   fill: #AFB1B8;
@@ -174,8 +174,8 @@ body {
 }
 
 .header__item--second:hover .contacts-links {
-  color: var(--button-color);
-  fill: var(--button-color);
+  color: #2196F3;
+  fill: #2196F3;
 }
 
 /*? portfolio-main */
@@ -308,7 +308,7 @@ body {
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(var(--color-background-overlay-img), var(--color-background-overlay-img));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img1.jpg);
   background-size: cover;
   background-color: var(--section-color);
 }
@@ -333,7 +333,7 @@ body {
 
 .hero__button {
   font-family: "Roboto";
-  background-color: var(--button-color);
+  background-color: #2196F3;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
