@@ -119,6 +119,7 @@ body {
 }
 
 .header__link--active {
+  font-weight: 500;
   color: #2196F3;
   position: relative;
   transition-property: all;

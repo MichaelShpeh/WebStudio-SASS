@@ -68,6 +68,7 @@
 }
 
 .header__link--active {
+    font-weight: 500;
     color: $button-color;
     position: relative;
     transition-property: all;
