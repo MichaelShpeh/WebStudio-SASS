@@ -12,13 +12,13 @@
 }
 
 .workers {
-    background: #f5f4fa;
+    background: getColor('background');
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .workers__item {
-    background-color: #fff;
+    background-color: getColor('header');
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     padding-bottom: 30px;
@@ -43,7 +43,7 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
-    color: $workers-color;
+    color: $getColor('workers');
 }
 
 .workers__list--social-media {
@@ -69,8 +69,8 @@
 }
 
 .workers__item--social-media:hover {
-    fill: #fff;
-    background-color: $button-color;
+    fill: getColor('header');
+    background-color: $getColor('button');
 }
 
 .workers__link {

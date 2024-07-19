@@ -4,11 +4,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image:
-        linear-gradient($color-background-overlay-img,
-            $color-background-overlay-img),
+        linear-gradient(getColor('background-overlay'),
+            getColor('background-overlay')),
         url(../images/img1.jpg);
     background-size: cover;
-    background-color: var(--section-color);
+    background-color: getColor('section');
 }
 
 .heromain {
@@ -31,7 +31,7 @@
 
 .hero__button {
     font-family: "Roboto";
-    background-color: $button-color;
+    background-color: getColor('button');
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;

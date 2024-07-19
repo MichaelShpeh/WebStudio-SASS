@@ -1,5 +1,5 @@
 .header {
-    background: #fff;
+    background: getColor('header');
     padding-top: 24px;
     padding-bottom: 25px;
     position: fixed;
@@ -22,7 +22,7 @@
 }
 
 .header__logo {
-    color: $button-color;
+    color: getColor('button');
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -57,19 +57,19 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: $text-color;
+    color: getColor('text');
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__link:hover {
-    color: $button-color;
+    color: getColor('button');
 }
 
 .header__link--active {
     font-weight: 500;
-    color: $button-color;
+    color: getColor('button');
     position: relative;
     transition-property: all;
     transition-duration: 250ms;
@@ -86,7 +86,7 @@
     border: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $button-color;
+    color: getColor('button');
     display: block;
 }
 
@@ -125,6 +125,6 @@
 }
 
 .header__item--second:hover .contacts-links {
-    color: $button-color;
-    fill: $button-color;
+    color: getColor('button');
+    fill: getColor('button');
 }
