@@ -8,12 +8,12 @@
     flex-direction: column;
 }
 
-.images__item {
+&__item {
     margin-right: 30px;
     position: relative;
 }
 
-.images__text {
+&__text {
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -29,16 +29,16 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.images__item:last-of-type {
+&__item:last-of-type {
     margin-right: 0px;
 }
 
-.images__list {
+&__list {
     display: flex;
     justify-content: flex-start;
 }
 
-.images__ourjob {
+&__ourjob {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
