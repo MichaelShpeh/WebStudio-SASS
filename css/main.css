@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   text-decoration: none;
   list-style: none;
@@ -471,23 +470,11 @@ body {
   justify-content: flex-start;
 }
 
-.ourwork–title {
-  /* font-family: "Roboto"; */
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  /* display: block; */
-  margin-bottom: 10px;
-}
-
-.ourwork-list-ourwurk-item {
-  /* display: flex;
-   justify-content: flex-start; */
+.ourwork-list__item {
   margin-right: 30px;
 }
 
-.ourwork-list-ourwurk-item::before {
+.ourwork-list__item::before {
   margin-bottom: 30px;
   content: "";
   display: block;
@@ -499,35 +486,43 @@ body {
   background-color: #f5f4fa;
 }
 
-.ourwork-list-ourwurk-item:nth-child(1)::before {
+.ourwork-list__item:nth-child(1)::before {
   background-image: url(../svg/antena.svg);
   content: "";
 }
 
-.ourwork-list-ourwurk-item:nth-child(2)::before {
+.ourwork-list__item:nth-child(2)::before {
   background-image: url(../svg/clock.svg);
   content: "";
 }
 
-.ourwork-list-ourwurk-item:nth-child(3)::before {
+.ourwork-list__item:nth-child(3)::before {
   background-image: url(../svg/diagram.svg);
   content: "";
 }
 
-.ourwork-list-ourwurk-item:nth-child(4)::before {
+.ourwork-list__item:nth-child(4)::before {
   background-image: url(../svg/astronaut.svg);
   content: "";
 }
 
-.ourwork-list-ourwurk-item:last-of-type {
+.ourwork-list__item:last-of-type {
   margin: 0px;
+}
+
+.ourwork-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .ourwork {
   padding-top: 94px;
 }
 
-.list-text {
+.ourwork-list__text {
   /* font-family: "Roboto"; */
   font-weight: 400;
   color: #212121;
