@@ -61,35 +61,34 @@
     margin-bottom: 34px;
 }
 
-.works__title {
-    /* font-family: "Roboto";  */
+.works-list__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    color: colorgetColor('text');
+    color: getColor('text');
     margin-top: 20px;
     margin-left: 24px;
 }
 
-.works__text {
+.works-list__text {
     /* font-family: "Roboto";  */
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: colorgetColor('workers');
+    color: getColor('workers');
     margin-top: 4px;
     margin-left: 24px;
 }
 
-.works__list {
+.works-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.works__item {
+.works-list__item {
     background: getColor('header');
     flex-basis: calc((100% - 60px) / 3);
     padding-bottom: 20px;
@@ -98,7 +97,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works__item:hover {
+.works-list__item:hover {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -126,7 +125,7 @@
 
 }
 
-.works__item:hover .card__text {
+.works-list__item:hover .card__text {
     transform: translateY(-100%);
     opacity: 1;
 }
