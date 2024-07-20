@@ -141,27 +141,32 @@ body {
   display: block;
 }
 
-.header__list--second {
+.list {
   display: flex;
   gap: 30px;
 }
 
-.header__item--second {
+.list__item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header__svg {
+.list__item:last-child {
+  margin-right: 0px;
+}
+
+.list__item:hover .contacts-links {
+  color: #2196F3;
+  fill: #2196F3;
+}
+
+.list__svg {
   fill: inherit;
   margin-right: 10px;
 }
 
-.header__item--second:last-child {
-  margin-right: 0px;
-}
-
-.header__contacts {
+.list__contacts {
   width: 161px;
   font-weight: 500;
   font-size: 14px;
@@ -173,11 +178,6 @@ body {
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__item--second:hover .contacts-links {
-  color: #2196F3;
-  fill: #2196F3;
 }
 
 /*? portfolio-main */
@@ -908,6 +908,10 @@ body {
   align-items: center;
 }
 
+.form {
+  width: 100%;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -953,13 +957,30 @@ body {
   right: 10px;
 }
 
-.modal-form-modal__div--form {
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  fill: var(--button-color);
+}
+
+.form-div {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.modal__div--form:focus {
+.form-div:focus {
   fill: var(--button-color);
   cursor: pointer;
 }
@@ -986,27 +1007,27 @@ body {
   cursor: pointer;
 }
 
-.modal__svg {
+.form__svg {
   position: absolute;
   top: 31px;
 }
 
-.modal__svg:nth-child(1) {
+.form__svg:nth-child(1) {
   left: 12px;
   /* top: 1px; */
 }
 
-.modal__svg:nth-child(2) {
+.form__svg:nth-child(2) {
   left: 12px;
   /* top: 21px; */
 }
 
-.modal__svg:nth-child(3) {
+.form__svg:nth-child(3) {
   left: 12px;
   /* top: 21px; */
 }
 
-.modal__label {
+.form__label {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -1015,7 +1036,7 @@ body {
   margin-bottom: 4px;
 }
 
-.modal__coments {
+.form__coments {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1025,7 +1046,7 @@ body {
   padding: 12px 16px;
 }
 
-.modal__coments::placeholder {
+.form__coments::placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
@@ -1033,7 +1054,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__input {
+.form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1042,11 +1063,11 @@ body {
   padding-left: 42px;
 }
 
-.modal__input:focus {
+.form__input:focus {
   border: solid 1px var(--button-color);
 }
 
-.modal__button--send {
+.forml__button {
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -1074,43 +1095,22 @@ body {
   margin-bottom: 12px;
 }
 
-.btn {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  border: none;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.btn:hover {
-  fill: var(--button-color);
-}
-
-.modal__span {
+.form__span {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #2196f3;
 }
 
-.modal__checkbox {
+.form__checkbox {
   margin-left: 12px;
   margin-bottom: 30px;
 }
 
-.modal__label--chekbox {
+.form__label--chekbox {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.modal__form {
-  width: 100%;
 }/*# sourceMappingURL=main.css.map */
