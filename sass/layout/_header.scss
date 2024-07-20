@@ -108,27 +108,27 @@
     gap: 30px;
 }
 
-.list__item {
+&__item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.list__item:last-child {
+&__item:last-child {
     margin-right: 0px;
 }
 
-.list__item:hover .contacts-links {
+&__item:hover .contacts-links {
     color: getColor('button');
     fill: getColor('button');
 }
 
-.list__svg {
+&__svg {
     fill: inherit;
     margin-right: 10px;
 }
 
-.list__contacts {
+&__contacts {
     width: 161px;
     font-weight: 500;
     font-size: 14px;
