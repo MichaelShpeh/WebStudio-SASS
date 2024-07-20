@@ -1,8 +1,8 @@
-.portfolios__item {
+&__item {
     margin-right: 8px;
 }
 
-.portfolios__button {
+&__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 162%;
@@ -21,14 +21,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolios__button:hover {
+&__button:hover {
     color: getColor('header');
     background-color: getColor('button');
     border: none;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 3px 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.portfolios__button--activ-link {
+&__button--activ-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 162%;
@@ -51,7 +51,7 @@
     margin-bottom: 94px;
 }
 
-.portfolios__item:last-child {
+&__item:last-child {
     margin-right: 0px;
 }
 
@@ -61,7 +61,7 @@
     margin-bottom: 34px;
 }
 
-.works-list__title {
+&__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -71,7 +71,7 @@
     margin-left: 24px;
 }
 
-.works-list__text {
+&__text {
     /* font-family: "Roboto";  */
     font-weight: 400;
     font-size: 16px;
@@ -88,7 +88,7 @@
     gap: 30px;
 }
 
-.works-list__item {
+&__item {
     background: getColor('header');
     flex-basis: calc((100% - 60px) / 3);
     padding-bottom: 20px;
@@ -97,7 +97,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-list__item:hover {
+&__item:hover {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -125,7 +125,7 @@
 
 }
 
-.works-list__item:hover .card__text {
+&__item:hover .card__text {
     transform: translateY(-100%);
     opacity: 1;
 }
