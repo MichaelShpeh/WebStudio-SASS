@@ -28,7 +28,7 @@
     margin-right: 70px;
 }
 
-.footer-list__link {
+&__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -36,7 +36,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-list__phone-number {
+&__phone-number {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -44,11 +44,11 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-list__item {
+&__item {
     margin-top: 9px;
 }
 
-.footer-list__item:first-child {
+&__item:first-child {
     margin-top: 0px;
 }
 
@@ -68,7 +68,7 @@
     margin-right: 93px;
 }
 
-.footer-list__item--social-links {
+&__item--social-links {
     width: 44px;
     height: 44px;
     display: flex;
@@ -83,7 +83,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list__item--social-links:hover {
+&__item--social-links:hover {
     background-color: #2196f3;
     fill: #fff;
     border-radius: 50%;
