@@ -23,12 +23,12 @@
     color: #ffff;
 }
 
-.footer__list {
+.footer-list {
     width: 231px;
     margin-right: 70px;
 }
 
-.footer__link {
+.footer-list__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -36,7 +36,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__phone-number {
+.footer-list__phone-number {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -44,15 +44,15 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__item {
+.footer-list__item {
     margin-top: 9px;
 }
 
-.footer__item:first-child {
+.footer-list__item:first-child {
     margin-top: 0px;
 }
 
-.footer__title {
+.links-list__title {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -62,13 +62,13 @@
     margin-top: -39px;
 }
 
-.footer__list--social-links {
+.footer-list--social-links {
     display: flex;
     justify-content: space-between;
     margin-right: 93px;
 }
 
-.footer__item--social-links {
+.footer-list__item--social-links {
     width: 44px;
     height: 44px;
     display: flex;
@@ -83,7 +83,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__item--social-links:hover {
+.footer-list__item--social-links:hover {
     background-color: #2196f3;
     fill: #fff;
     border-radius: 50%;
