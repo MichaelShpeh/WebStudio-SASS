@@ -130,23 +130,23 @@ body {
   display: flex;
   gap: 30px;
 }
-.header__item {
+.header .list__item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header__item:last-child {
+.header .list__item:last-child {
   margin-right: 0px;
 }
-.header__item:hover .contacts-links {
+.header .list__item:hover .contacts-links {
   color: #2196F3;
   fill: #2196F3;
 }
-.header__svg {
+.header .list__svg {
   fill: inherit;
   margin-right: 10px;
 }
-.header__contacts {
+.header .list__contacts {
   width: 161px;
   font-weight: 500;
   font-size: 14px;

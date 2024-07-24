@@ -93,27 +93,27 @@
         gap: 30px;
     }
 
-    &__item {
+    .list__item {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    &__item:last-child {
+    .list__item:last-child {
         margin-right: 0px;
     }
 
-    &__item:hover .contacts-links {
+    .list__item:hover .contacts-links {
         color: getColor('button');
         fill: getColor('button');
     }
 
-    &__svg {
+    .list__svg {
         fill: inherit;
         margin-right: 10px;
     }
 
-    &__contacts {
+    .list__contacts {
         width: 161px;
         font-weight: 500;
         font-size: 14px;
