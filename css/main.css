@@ -439,6 +439,22 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+.ourwork .ourwork-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ourwork .ourwork-list__text {
+  /* font-family: "Roboto"; */
+  font-weight: 400;
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
 .ourwork .ourwork-list__item {
   margin-right: 30px;
 }
@@ -471,22 +487,6 @@ body {
 }
 .ourwork .ourwork-list__item:last-of-type {
   margin: 0px;
-}
-.ourwork__title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.ourwork__text {
-  /* font-family: "Roboto"; */
-  font-weight: 400;
-  color: #212121;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
 }
 
 .portfolios-list {
