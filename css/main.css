@@ -367,7 +367,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.clients__item {
+.clients .clients-list__item {
   margin-right: 30px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -381,7 +381,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__item:hover {
+.clients .clients-list__item:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
   width: 170px;
