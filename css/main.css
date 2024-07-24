@@ -439,10 +439,10 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.ourwork__item {
+.ourwork .ourwork-list__item {
   margin-right: 30px;
 }
-.ourwork__item::before {
+.ourwork .ourwork-list__item::before {
   margin-bottom: 30px;
   content: "";
   display: block;
@@ -453,23 +453,23 @@ body {
   background-position: center;
   background-color: #f5f4fa;
 }
-.ourwork__item:nth-child(1)::before {
+.ourwork .ourwork-list__item:nth-child(1)::before {
   background-image: url(../svg/antena.svg);
   content: "";
 }
-.ourwork__item:nth-child(2)::before {
+.ourwork .ourwork-list__item:nth-child(2)::before {
   background-image: url(../svg/clock.svg);
   content: "";
 }
-.ourwork__item:nth-child(3)::before {
+.ourwork .ourwork-list__item:nth-child(3)::before {
   background-image: url(../svg/diagram.svg);
   content: "";
 }
-.ourwork__item:nth-child(4)::before {
+.ourwork .ourwork-list__item:nth-child(4)::before {
   background-image: url(../svg/astronaut.svg);
   content: "";
 }
-.ourwork__item:last-of-type {
+.ourwork .ourwork-list__item:last-of-type {
   margin: 0px;
 }
 .ourwork__title {
