@@ -1,13 +1,17 @@
-.portfolios {
+.portfolios-list {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
 
-    &__item {
+    .portfolios-list__item {
         margin-right: 8px;
     }
 
-    &__button {
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    .portfolios-list__button {
         font-weight: 500;
         font-size: 16px;
         line-height: 162%;
@@ -26,14 +30,14 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__button:hover {
+    .portfolios-list__button:hover {
         color: getColor('header');
         background-color: getColor('button');
         border: none;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 3px 1px 0 rgba(0, 0, 0, 0.25);
     }
 
-    &__button--activ-link {
+    .portfolios-list__button--activ-link {
         font-weight: 500;
         font-size: 16px;
         line-height: 162%;
@@ -50,15 +54,14 @@
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
         background: getColor('button');
     }
+}
 
-    .all {
-        margin-top: 94px;
-        margin-bottom: 94px;
-    }
+.all {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
-    &__item:last-child {
-        margin-right: 0px;
-    }
+.works-list {
 
     &__title {
         font-weight: 700;

@@ -489,15 +489,18 @@ body {
   margin-top: 10px;
 }
 
-.portfolios {
+.portfolios-list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
 }
-.portfolios__item {
+.portfolios-list .portfolios-list__item {
   margin-right: 8px;
 }
-.portfolios__button {
+.portfolios-list__item:last-child {
+  margin-right: 0px;
+}
+.portfolios-list .portfolios-list__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -515,13 +518,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolios__button:hover {
+.portfolios-list .portfolios-list__button:hover {
   color: #fff;
   background-color: #2196F3;
   border: none;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 3px 1px 0 rgba(0, 0, 0, 0.25);
 }
-.portfolios__button--activ-link {
+.portfolios-list .portfolios-list__button--activ-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
@@ -538,14 +541,13 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
   background: #2196F3;
 }
-.portfolios .all {
+
+.all {
   margin-top: 94px;
   margin-bottom: 94px;
 }
-.portfolios__item:last-child {
-  margin-right: 0px;
-}
-.portfolios__title {
+
+.works-list__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -554,7 +556,7 @@ body {
   margin-top: 20px;
   margin-left: 24px;
 }
-.portfolios__text {
+.works-list__text {
   /* font-family: "Roboto";  */
   font-weight: 400;
   font-size: 16px;
@@ -564,12 +566,12 @@ body {
   margin-top: 4px;
   margin-left: 24px;
 }
-.portfolios .works-list {
+.works-list .works-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolios__item {
+.works-list__item {
   background: #fff;
   flex-basis: calc((100% - 60px) / 3);
   padding-bottom: 20px;
@@ -577,15 +579,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolios__item:hover {
+.works-list__item:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
-.portfolios .card-overlay-box {
+.works-list .card-overlay-box {
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-.portfolios .card__text {
+.works-list .card__text {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -601,7 +603,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolios__item:hover .card__text {
+.works-list__item:hover .card__text {
   transform: translateY(-100%);
   opacity: 1;
 }
