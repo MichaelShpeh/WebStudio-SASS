@@ -9,23 +9,18 @@
     z-index: 2;
 
     .head {
-        display: flex;
-        align-items: center;
+        @include flex_aic;
     }
 
     &__logo--black {
-        font-family: "Raleway";
-        font-weight: 700;
+        @include releway(700);
         font-size: 26px;
-        letter-spacing: 0.03em;
     }
 
     &__logo {
+        @include releway(700);
         color: getColor('button');
-        font-family: "Raleway";
-        font-weight: 700;
         font-size: 26px;
-        letter-spacing: 0.03em;
         margin-right: 93px;
     }
 
@@ -39,8 +34,7 @@
     }
 
     .header-list {
-        display: flex;
-        align-items: center;
+        @include flex_aic;
     }
 
     .header-list__item {
@@ -52,9 +46,8 @@
     }
 
     .header-list__link {
-        font-weight: 500;
+        @include roboto(500, 0.02em);
         font-size: 14px;
-        letter-spacing: 0.02em;
         color: getColor('text');
         transition-property: color;
         transition-duration: 250ms;
@@ -94,9 +87,7 @@
     }
 
     .list__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex;
     }
 
     .list__item:last-child {
@@ -114,13 +105,11 @@
     }
 
     .list__contacts {
+        @include roboto(500, 0.02em);
+        @include flex_aic;
         width: 161px;
-        font-weight: 500;
         font-size: 14px;
-        letter-spacing: 0.02em;
-        color: $workers-color;
-        display: flex;
-        align-items: center;
+        color: getColor(workers);
         fill: #AFB1B8;
         transition-property: color, fill;
         transition-duration: 250ms;
