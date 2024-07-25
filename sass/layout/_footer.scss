@@ -4,10 +4,10 @@
     padding-bottom: 60px;
 
     .foot {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        @include flex(column);
     }
 
     .footer__logo--white {
@@ -24,15 +24,14 @@
 
 
         &__link {
-            font-weight: 400;
+            @include raleway(400);
             font-size: 14px;
             line-height: 1.7;
-            letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
         }
 
         &__phone-number {
-            font-weight: 400;
+            @include raleway(400);
             font-size: 14px;
             line-height: 1.7;
             letter-spacing: 0.03em;

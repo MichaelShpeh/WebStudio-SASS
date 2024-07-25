@@ -686,11 +686,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .foot {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .footer .footer__logo--white {
   color: #fff;
 }

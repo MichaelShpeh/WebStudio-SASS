@@ -4,8 +4,26 @@
     align-items: center;
 }
 
-@mixin font() {
+@mixin flex_jcsb() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex_fdc() {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin foboto() {
     font-family: getFont(roboto);
-    font-size: 14px;
     letter-spacing: 0.03em;
+    font-weight: 100;
+}
+
+@mixin raleway() {
+    font-family: getFont(raleway);
+    letter-spacing: 0.03em;
+    font-weight: 100;
 }
