@@ -1,0 +1,11 @@
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font() {
+    font-family: getFont(roboto);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}

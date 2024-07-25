@@ -29,11 +29,11 @@
     }
 
     .ourwork-list__item::before {
+        height: 120px;
+        width: 270px;
         margin-bottom: 30px;
         content: "";
         display: block;
-        height: 120px;
-        width: 270px;
         border-radius: 4px;
         background-repeat: no-repeat;
         background-position: center;
