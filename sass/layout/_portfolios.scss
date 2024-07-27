@@ -1,6 +1,5 @@
 .portfolios-list {
-    display: flex;
-    justify-content: center;
+    @include flex_jcfs(center);
     margin-bottom: 34px;
 
     .portfolios-list__item {
@@ -12,10 +11,9 @@
     }
 
     .portfolios-list__button {
-        font-weight: 500;
+        @include roboto(500);
         font-size: 16px;
         line-height: 162%;
-        letter-spacing: 0.03em;
         text-align: center;
         background: getColor('background');
         padding-top: 6px;
@@ -38,10 +36,9 @@
     }
 
     .portfolios-list__button--activ-link {
-        font-weight: 500;
+        @include roboto(500);
         font-size: 16px;
         line-height: 162%;
-        letter-spacing: 0.03em;
         text-align: center;
         padding-top: 6px;
         padding-bottom: 6px;
@@ -64,29 +61,25 @@
 .works-list {
 
     &__title {
-        font-weight: 700;
+        @include roboto(700, 0.06em);
         font-size: 18px;
         line-height: 2.0;
-        letter-spacing: 0.06em;
         color: getColor('text');
         margin-top: 20px;
         margin-left: 24px;
     }
 
     &__text {
-        /* font-family: "Roboto";  */
-        font-weight: 400;
+        @include roboto(400);
         font-size: 16px;
         line-height: 1.9;
-        letter-spacing: 0.03em;
         color: getColor('workers');
         margin-top: 4px;
         margin-left: 24px;
     }
 
     .works-list {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex_ww;
         gap: 30px;
     }
 

@@ -6,20 +6,17 @@
         justify-content: flex-start;
 
         &__title {
-            font-weight: 700;
+            @include roboto(700);
             font-size: 14px;
-            letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
 
         &__text {
-            /* font-family: "Roboto"; */
-            font-weight: 400;
+            @include roboto(400);
             color: getColor('text');
             font-size: 14px;
             line-height: 1.7;
-            letter-spacing: 0.03em;
             margin-top: 10px;
         }
     }

@@ -15,7 +15,23 @@
     flex-direction: column;
 }
 
-@mixin foboto() {
+@mixin flex_fdc-aic() {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flex_jcfs() {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin flex_ww {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin roboto() {
     font-family: getFont(roboto);
     letter-spacing: 0.03em;
     font-weight: 100;
