@@ -3,18 +3,15 @@
     padding-bottom: 94px;
 
     &__title {
-        font-weight: 700;
+        @include roboto(700);
         font-size: 36px;
-        letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
         margin-bottom: 50px;
     }
 
     .clients-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex;
 
 
         &__item {
@@ -23,9 +20,7 @@
             border-radius: 4px;
             width: 170px;
             height: 92px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex;
             fill: #AFB1B8;
             transition-property: color, fill;
             transition-duration: 250ms;
