@@ -15,7 +15,9 @@
     }
 
     &__title {
-        @include roboto(900, 0.06em);
+        font-family: getFont(roboto);
+        font-weight: 900;
+        letter-spacing: 0.06em;
         font-size: 44px;
         line-height: 1.4;
         text-transform: uppercase;
@@ -25,7 +27,9 @@
     }
 
     &__button {
-        @include roboto(700, 0.06em);
+        font-family: getFont(roboto);
+        font-weight: 700;
+        letter-spacing: 0.06em;
         background-color: getColor('button');
         font-size: 16px;
         line-height: 1.9;

@@ -63,17 +63,13 @@ body {
   align-items: center;
 }
 .header__logo--black {
-  font-family: "Raleway";
-  font-weight: 700;
+  font-size: 700;
   font-size: 26px;
-  letter-spacing: 0.03em;
 }
 .header__logo {
-  color: #2196F3;
-  font-family: "Raleway";
   font-weight: 700;
+  color: #2196F3;
   font-size: 26px;
-  letter-spacing: 0.03em;
   margin-right: 93px;
 }
 .header .header__logo--black {
@@ -94,9 +90,10 @@ body {
   margin-right: 0px;
 }
 .header .header-list__link {
+  font-family: "Roboto";
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 0.02em;
+  font-size: 14px;
   color: #212121;
   transition-property: color;
   transition-duration: 250ms;
@@ -132,6 +129,7 @@ body {
 }
 .header .list__item {
   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -147,13 +145,15 @@ body {
   margin-right: 10px;
 }
 .header .list__contacts {
-  width: 161px;
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 0.02em;
-  color: #757575;
   display: flex;
   align-items: center;
+  width: 161px;
+  font-size: 14px;
+  color: #757575;
   fill: #AFB1B8;
   transition-property: color, fill;
   transition-duration: 250ms;
@@ -296,15 +296,15 @@ body {
 }
 .hero .heromain {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .hero__title {
-  /* font-family: "Roboto"; */
+  font-family: "Roboto";
   font-weight: 900;
+  letter-spacing: 0.06em;
   font-size: 44px;
   line-height: 1.4;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -312,13 +312,13 @@ body {
 }
 .hero__button {
   font-family: "Roboto";
+  font-weight: 700;
+  letter-spacing: 0.06em;
   background-color: #2196F3;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.06em;
   text-align: center;
   color: #fff;
-  font-weight: 700;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -355,9 +355,9 @@ body {
   padding-bottom: 94px;
 }
 .clients__title {
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
@@ -396,6 +396,7 @@ body {
 }
 .images .image {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .images__item {
@@ -408,9 +409,10 @@ body {
   bottom: 0px;
   padding-top: 27px;
   padding-bottom: 27px;
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
@@ -425,9 +427,9 @@ body {
 }
 .images__ourjob {
   font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -440,19 +442,20 @@ body {
   justify-content: flex-start;
 }
 .ourwork .ourwork-list__title {
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .ourwork .ourwork-list__text {
-  /* font-family: "Roboto"; */
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 400;
   color: #212121;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   margin-top: 10px;
 }
 .ourwork .ourwork-list__item {
@@ -501,10 +504,11 @@ body {
   margin-right: 0px;
 }
 .portfolios-list .portfolios-list__button {
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
-  letter-spacing: 0.03em;
   text-align: center;
   background: #f5f4fa;
   padding-top: 6px;
@@ -525,10 +529,11 @@ body {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 3px 1px 0 rgba(0, 0, 0, 0.25);
 }
 .portfolios-list .portfolios-list__button--activ-link {
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
-  letter-spacing: 0.03em;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -548,20 +553,21 @@ body {
 }
 
 .works-list__title {
+  font-family: "Roboto";
+  letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
   color: #212121;
   margin-top: 20px;
   margin-left: 24px;
 }
 .works-list__text {
-  /* font-family: "Roboto";  */
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
   color: #757575;
   margin-top: 4px;
   margin-left: 24px;
@@ -618,9 +624,10 @@ body {
   justify-content: space-between;
 }
 .workers .workers__title {
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -634,17 +641,18 @@ body {
 .workers .workers-list__text {
   width: 270px;
   font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-top: 30px;
 }
 .workers .workers-list__title {
   width: 270px;
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -686,6 +694,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer .foot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .footer .footer__logo--white {
   color: #fff;
 }
@@ -697,17 +710,19 @@ body {
   margin-right: 70px;
 }
 .footer .footer-list__link {
+  font-family: "Raleway";
+  letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer-list__phone-number {
+  font-family: "Raleway";
+  letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer-list__item {

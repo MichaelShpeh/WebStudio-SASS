@@ -1,5 +1,5 @@
 .portfolios-list {
-    @include flex_jcfs(center);
+    @include flex_jcc;
     margin-bottom: 34px;
 
     .portfolios-list__item {
@@ -11,7 +11,9 @@
     }
 
     .portfolios-list__button {
-        @include roboto(500);
+        font-family: getFont(roboto);
+        letter-spacing: 0.03em;
+        font-weight: 500;
         font-size: 16px;
         line-height: 162%;
         text-align: center;
@@ -36,7 +38,9 @@
     }
 
     .portfolios-list__button--activ-link {
-        @include roboto(500);
+        font-family: getFont(roboto);
+        letter-spacing: 0.03em;
+        font-weight: 500;
         font-size: 16px;
         line-height: 162%;
         text-align: center;
@@ -61,7 +65,9 @@
 .works-list {
 
     &__title {
-        @include roboto(700, 0.06em);
+        font-family: getFont(roboto);
+        letter-spacing: 0.06em;
+        font-weight: 700;
         font-size: 18px;
         line-height: 2.0;
         color: getColor('text');
@@ -70,7 +76,9 @@
     }
 
     &__text {
-        @include roboto(400);
+        font-family: getFont(roboto);
+        letter-spacing: 0.03em;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.9;
         color: getColor('workers');

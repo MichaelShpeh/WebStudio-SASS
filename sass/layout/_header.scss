@@ -9,16 +9,20 @@
     z-index: 2;
 
     .head {
-        @include flex_aic;
+        // @include flex_aic;
+        display: flex;
+        align-items: center;
     }
 
     &__logo--black {
-        @include releway(700);
+        // @include raleway(700);
+        font-size: 700;
         font-size: 26px;
     }
 
     &__logo {
-        @include releway(700);
+        // @include raleway(700);
+        font-weight: 700;
         color: getColor('button');
         font-size: 26px;
         margin-right: 93px;
@@ -34,7 +38,9 @@
     }
 
     .header-list {
-        @include flex_aic;
+        // @include flex_aic;
+        display: flex;
+        align-items: center;
     }
 
     .header-list__item {
@@ -46,7 +52,9 @@
     }
 
     .header-list__link {
-        @include roboto(500, 0.02em);
+        font-family: getFont(roboto);
+        font-weight: 500;
+        letter-spacing: 0.02em;
         font-size: 14px;
         color: getColor('text');
         transition-property: color;
@@ -87,6 +95,7 @@
     }
 
     .list__item {
+        display: flex;
         @include flex;
     }
 
@@ -105,8 +114,13 @@
     }
 
     .list__contacts {
-        @include roboto(500, 0.02em);
-        @include flex_aic;
+        font-family: getFont(roboto);
+        letter-spacing: 0.03em;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        // @include flex_aic;
+        display: flex;
+        align-items: center;
         width: 161px;
         font-size: 14px;
         color: getColor(workers);

@@ -6,14 +6,18 @@
         justify-content: flex-start;
 
         &__title {
-            @include roboto(700);
+            font-family: getFont(roboto);
+            letter-spacing: 0.03em;
+            font-weight: 700;
             font-size: 14px;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
 
         &__text {
-            @include roboto(400);
+            font-family: getFont(roboto);
+            letter-spacing: 0.03em;
+            font-weight: 400;
             color: getColor('text');
             font-size: 14px;
             line-height: 1.7;
