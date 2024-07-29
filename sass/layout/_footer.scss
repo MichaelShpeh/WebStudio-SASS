@@ -152,8 +152,7 @@
         width: 571px;
         height: 50px;
         position: relative;
-        display: flex;
-        justify-content: center;
+        @include flex_jcc;
         align-items: center;
     }
 

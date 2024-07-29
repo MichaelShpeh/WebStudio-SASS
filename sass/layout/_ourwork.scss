@@ -2,8 +2,7 @@
     padding-top: 94px;
 
     .ourwork-list {
-        display: flex;
-        justify-content: flex-start;
+        @include flex_jcfs;
 
         &__title {
             font-family: getFont(roboto);

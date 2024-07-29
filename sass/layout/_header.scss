@@ -9,19 +9,16 @@
     z-index: 2;
 
     .head {
-        // @include flex_aic;
-        display: flex;
-        align-items: center;
+        @include flex_aic;
+
     }
 
     &__logo--black {
-        // @include raleway(700);
         font-size: 700;
         font-size: 26px;
     }
 
     &__logo {
-        // @include raleway(700);
         font-weight: 700;
         color: getColor('button');
         font-size: 26px;
@@ -38,9 +35,7 @@
     }
 
     .header-list {
-        // @include flex_aic;
-        display: flex;
-        align-items: center;
+        @include flex_aic;
     }
 
     .header-list__item {
@@ -118,9 +113,7 @@
         letter-spacing: 0.03em;
         font-weight: 500;
         letter-spacing: 0.02em;
-        // @include flex_aic;
-        display: flex;
-        align-items: center;
+        @include flex_aic;
         width: 161px;
         font-size: 14px;
         color: getColor(workers);
