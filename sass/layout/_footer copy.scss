@@ -1,0 +1,292 @@
+.footer {
+    width: 100%;
+    min-width: 320px;
+    background-color: getColor('section');
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    @media screen and (min-width:480px) {}
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width:1200px) {}
+
+    .foot {
+
+        @media screen and (min-width:480px) {
+            @include flex_ww;
+            width: 450px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            @include flex_fdc;
+        }
+    }
+
+    .footer__logo {
+        @media screen and (min-width:480px) {
+            text-align: center;
+            // margin-bottom: 20px;
+
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {}
+
+    }
+
+    .footer__logo--white {
+        color: #fff;
+    }
+
+    .location {
+        color: #ffff;
+    }
+
+    .footer-list {
+
+        @media screen and (min-width:480px) {
+            width: 232px;
+            height: 79px;
+
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            width: 231px;
+            margin-right: 70px;
+        }
+
+
+        // @media screen and (min-width:480px) {}
+
+        // @media screen and (min-width:768px) {}
+
+        // @media screen and (min-width:1200px) {}
+
+
+
+        &__item {
+            margin-top: 9px;
+        }
+
+        &__item:first-child {
+            margin-top: 0px;
+        }
+
+
+        &__link {
+            font-family: getFont(raleway);
+            letter-spacing: 0.03em;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &__phone-number {
+            font-family: getFont(raleway);
+            letter-spacing: 0.03em;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .links-list {
+        @media screen and (min-width:480px) {
+            width: 206px;
+            height: 80px;
+
+
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {}
+
+        &__title {
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #fff;
+
+
+            @media screen and (min-width:480px) {}
+
+            @media screen and (min-width:768px) {}
+
+            @media screen and (min-width:1200px) {
+                margin-bottom: 20px;
+                margin-top: -39px;
+            }
+        }
+
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            margin-right: 93px;
+            margin-bottom: 20px;
+        }
+
+
+        &__item {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            cursor: pointer;
+            transition-property: fill, background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__item:hover {
+            background-color: #2196f3;
+            fill: #fff;
+            border-radius: 50%;
+        }
+    }
+
+    .address {
+        display: flex;
+        font-style: normal;
+    }
+
+    .footer__button--subscribe {
+        display: flex;
+
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: #fff;
+        background-color: getColor('button');
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        border: none;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            left: 370px;
+            bottom: 0px;
+        }
+    }
+
+    .footer-svg {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            margin-left: 10px;
+        }
+    }
+
+    .footer__text--sending {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            position: absolute;
+            bottom: 70px;
+            left: 0px;
+        }
+    }
+
+    .footer__input {
+
+        @media screen and (min-width:480px) {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            width: 450px;
+            height: 50px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background: rgba(33, 150, 243, 0);
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            width: 358px;
+            height: 50px;
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background: rgba(33, 150, 243, 0);
+            margin-right: 12px;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+
+    .sending {
+
+        @media screen and (min-width:480px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {}
+
+        @media screen and (min-width:480px) {
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1200px) {
+            width: 571px;
+            height: 50px;
+            position: relative;
+            @include flex_jcc;
+            align-items: center;
+        }
+    }
+
+
+
+}
