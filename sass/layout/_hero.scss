@@ -1,4 +1,6 @@
 .hero {
+    width: 100%;
+    min-width: 320px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
@@ -8,6 +10,7 @@
             getColor('background-overlay')),
         url(../images/img1.jpg);
     background-size: cover;
+
     background-color: getColor('section');
 
     .heromain {
@@ -15,6 +18,7 @@
     }
 
     &__title {
+        min-width: 320px;
         font-family: getFont(roboto);
         font-weight: 900;
         letter-spacing: 0.06em;
@@ -23,7 +27,14 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
-        width: 696px;
+
+        @media screen and (min-width:768px) {
+            width: 696px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+        }
     }
 
     &__button {

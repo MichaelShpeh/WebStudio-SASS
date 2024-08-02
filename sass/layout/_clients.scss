@@ -1,6 +1,17 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+
+    @media screen and (min-width:480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title {
         letter-spacing: 0.03em;
@@ -12,18 +23,36 @@
     }
 
     .clients-list {
-        @include flex;
+        @include flex_ww;
+
+        @media screen and (min-width:480px) {
+            width: 450px;
+            height: 336px;
+            gap: 30px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width: 1200px) {}
 
 
         &__item {
-            margin-right: 30px;
             border: 1px solid #AFB1B8;
             border-radius: 4px;
-            width: 170px;
-            height: 92px;
+
+            @media screen and (min-width:480px) {
+                width: 210px;
+                height: 92px;
+            }
+
+            @media screen and (min-width:768px) {}
+
+            @media screen and (min-width: 1200px) {}
+
             @include flex;
             fill: #AFB1B8;
-            transition-property: color, fill;
+            transition-property: color,
+            fill;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }

@@ -4,8 +4,16 @@
     padding-bottom: 94px;
 
     .workers-list {
-        @include flex_jcsb;
+
+        @media screen and (min-width:768px) {
+            @include flex_jcsb;
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include flex_jcsb;
+        }
     }
+
 
     .workers__title {
         font-family: getFont(roboto);
@@ -17,11 +25,33 @@
     }
 
     .workers-list__item {
+        min-width: 320px;
         background-color: getColor('header');
         border-radius: 0 0 4px 4px;
         box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
         padding-bottom: 30px;
-        width: 270px;
+
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width: 1200px) {}
+    }
+
+
+    .workers-list__img {
+        min-width: 320px;
+
+        @media screen and (min-width:480px) {
+            width: 450px;
+            height: 460px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width: 1200px) {}
     }
 
     .workers-list__text {
@@ -31,6 +61,7 @@
         font-weight: 500;
         font-size: 16px;
         text-align: center;
+        margin: 0 auto;
         margin-top: 30px;
     }
 
@@ -41,6 +72,7 @@
         font-weight: 400;
         font-size: 16px;
         text-align: center;
+        margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 30px;
         color: getColor('workers');
@@ -50,6 +82,7 @@
         width: 270px;
         @include flex;
         gap: 10px;
+        margin: 0 auto;
     }
 
     .workers-list__item--social-media {
