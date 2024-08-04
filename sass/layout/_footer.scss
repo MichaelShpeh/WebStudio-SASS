@@ -1,16 +1,23 @@
 .footer {
     min-width: 320px;
     background-color: getColor('section');
-    padding-top: 60px;
-    padding-bottom: 60px;
+
 
     @media screen and (min-width:480px) {
         max-width: 480px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width:768px) {
+        min-width: 768px;
+        height: 463px;
+    }
 
-    @media screen and (min-width: 1200px) {}
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
 
     .foot {
@@ -23,7 +30,10 @@
             justify-content: center;
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            @include flex_ww;
+            position: relative;
+        }
 
         @media screen and (min-width: 1200px) {
             @include flex_fdc;
@@ -43,7 +53,11 @@
             margin: 0 auto;
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            position: absolute;
+            top: 60px;
+            left: 115px;
+        }
 
         @media screen and (min-width: 1200px) {}
     }
@@ -78,7 +92,11 @@
             margin-bottom: 60px;
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            position: absolute;
+            top: 108px;
+            left: 76px;
+        }
 
         @media screen and (min-width: 1200px) {}
 
@@ -125,6 +143,12 @@
             width: 206px;
             height: 80px;
             margin: 0 auto;
+        }
+
+        @media screen and (min-width:768px) {
+            position: absolute;
+            top: 60px;
+            right: 89px;
         }
 
         &__title {
@@ -191,7 +215,14 @@
             margin-bottom: 20px;
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            width: 450px;
+            height: 50px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background: rgba(33, 150, 243, 0);
+        }
 
         @media screen and (min-width: 1200px) {
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -217,6 +248,12 @@
         align-items: center;
         cursor: pointer;
         margin: 0 auto;
+
+        @media screen and (min-width:768px) {
+            width: 200px;
+            height: 50px;
+        }
+
     }
 
     .footer-svg {
@@ -229,6 +266,12 @@
     .sending {
         @include flex;
         flex-direction: column;
+
+        @media screen and (min-width:768px) {
+            position: absolute;
+            top: 247px;
+            left: 166px;
+        }
     }
 
 }

@@ -5,7 +5,10 @@
         min-width: 320px;
 
         @media screen and (min-width:768px) {
-            @include flex_jcfs;
+            width: 738px;
+            height: 480px;
+            @include flex_ww;
+            gap: 20px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -51,7 +54,20 @@
 
 
 .ourwork-list__item {
-    margin-right: 30px;
+
+
+    @media screen and (min-width:480px) {}
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+        height: 224px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+
+
 }
 
 .ourwork-list__item::before {
@@ -64,59 +80,37 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: getColor('background');
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {}
 }
 
 .ourwork-list__item:nth-child(1)::before {
     background-image: url(../svg/antena.svg);
     content: '';
     min-width: 320px;
-
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width:768px) {}
-
-    @media screen and (min-width: 1200px) {}
 }
 
 .ourwork-list__item:nth-child(2)::before {
     background-image: url(../svg/clock.svg);
     content: '';
-
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width:768px) {}
-
-    @media screen and (min-width: 1200px) {}
 }
 
 .ourwork-list__item:nth-child(3)::before {
     background-image: url(../svg/diagram.svg);
     content: '';
-
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width:768px) {}
-
-    @media screen and (min-width: 1200px) {}
 }
 
 .ourwork-list__item:nth-child(4)::before {
     background-image: url(../svg/astronaut.svg);
     content: '';
-
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width:768px) {}
-
-    @media screen and (min-width: 1200px) {}
 }
 
 .ourwork-list__item:last-of-type {

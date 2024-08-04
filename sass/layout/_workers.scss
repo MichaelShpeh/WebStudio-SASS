@@ -6,7 +6,8 @@
     .workers-list {
 
         @media screen and (min-width:768px) {
-            @include flex_jcsb;
+            @include flex_ww;
+            gap: 30px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -35,7 +36,10 @@
             width: 450px;
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            width: 354px;
+            height: 536px;
+        }
 
         @media screen and (min-width: 1200px) {}
     }
@@ -49,7 +53,10 @@
             height: 460px;
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            width: 354px;
+            height: 373px;
+        }
 
         @media screen and (min-width: 1200px) {}
     }

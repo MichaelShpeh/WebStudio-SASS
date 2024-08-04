@@ -29,9 +29,14 @@
             width: 450px;
             height: 336px;
             gap: 30px;
+
         }
 
-        @media screen and (min-width:768px) {}
+        @media screen and (min-width:768px) {
+            width: 738px;
+            height: 277px;
+            gap: 30px;
+        }
 
         @media screen and (min-width: 1200px) {}
 
@@ -45,7 +50,10 @@
                 height: 92px;
             }
 
-            @media screen and (min-width:768px) {}
+            @media screen and (min-width:768px) {
+                width: 226px;
+                height: 92px;
+            }
 
             @media screen and (min-width: 1200px) {}
 
