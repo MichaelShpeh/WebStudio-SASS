@@ -1,13 +1,32 @@
 .portfolios-list {
-    @include flex_jcc;
-    margin-bottom: 34px;
+
+
+    @media screen and (min-width:480px) {
+        width: 326px;
+        height: 91px;
+        @include flex_ww;
+        gap: 8px;
+    }
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width: 1200px) {
+        @include flex_jcc;
+        margin-bottom: 34px;
+    }
 
     .portfolios-list__item {
-        margin-right: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 8px;
+        }
     }
 
     &__item:last-child {
-        margin-right: 0px;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 0px;
+        }
     }
 
     .portfolios-list__button {
@@ -58,11 +77,33 @@
 }
 
 .all {
-    margin-top: 94px;
-    margin-bottom: 94px;
+
+
+    @media screen and (min-width:480px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
 }
 
 .works-list {
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+
+    }
+
+    @media screen and (min-width:768px) {}
+
+    @media screen and (min-width: 1200px) {
+        @include flex_ww;
+        gap: 30px;
+    }
 
     &__title {
         font-family: getFont(roboto);
@@ -86,11 +127,6 @@
         margin-left: 24px;
     }
 
-    .works-list {
-        @include flex_ww;
-        gap: 30px;
-    }
-
     &__item {
         background: getColor('header');
         flex-basis: calc((100% - 60px) / 3);
@@ -98,6 +134,15 @@
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width:480px) {
+            width: 450px;
+            height: 404px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width: 1200px) {}
     }
 
     &__item:hover {
@@ -110,11 +155,20 @@
         overflow: hidden;
     }
 
+    .img {
+        @media screen and (min-width:480px) {
+            width: 450px;
+            height: 294px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width: 1200px) {}
+    }
+
     .card__text {
         width: 100%;
         height: 100%;
-        position: absolute;
-        padding: 63px 24px;
         font-weight: 400;
         font-size: 18px;
         line-height: 156%;
@@ -126,6 +180,17 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+        @media screen and (min-width:480px) {
+            position: absolute;
+            padding: 63px 24px;
+        }
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            padding: 63px 24px;
+        }
     }
 
     &__item:hover .card__text {
