@@ -4,7 +4,7 @@
 
 
     @media screen and (min-width:480px) {
-        max-width: 480px;
+        min-width: 480px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -15,7 +15,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 60px;
+        min-width: 1200px;
+        height: 252px;
+        padding-top: 0px;
         padding-bottom: 60px;
     }
 
@@ -36,7 +38,8 @@
         }
 
         @media screen and (min-width: 1200px) {
-            @include flex_fdc;
+            @include flex;
+            height: 132px;
         }
     }
 
@@ -77,10 +80,20 @@
         @media screen and (min-width:480px) {
             flex-direction: column;
         }
+
+        @media screen and (min-width:1200px) {
+            flex-direction: row;
+        }
     }
 
     .location {
         color: #ffff;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: #fff;
     }
 
     .footer-list {
@@ -98,7 +111,10 @@
             left: 76px;
         }
 
-        @media screen and (min-width: 1200px) {}
+        @media screen and (min-width: 1200px) {
+            width: 231px;
+            // margin-right: 70px;
+        }
 
         &__item {
             font-family: 'Roboto';
@@ -112,6 +128,14 @@
 
             @media screen and (min-width:480px) {
                 text-align: center;
+            }
+
+            @media screen and (min-width:768px) {
+                text-align: left;
+            }
+
+            @media screen and (min-width: 1200px) {
+                text-align: left;
             }
         }
 
@@ -151,6 +175,14 @@
             right: 89px;
         }
 
+        @media screen and (min-width:1200px) {
+            width: 206px;
+            height: 80px;
+            position: relative;
+            top: 60px;
+
+        }
+
         &__title {
             font-weight: 700;
             font-size: 14px;
@@ -159,6 +191,11 @@
             color: #fff;
             text-align: center;
             margin-bottom: 10px;
+
+            // @media screen and (min-width:1200px) {
+            //     margin-bottom: 20px;
+            //     margin-top: -39px;
+            // }
         }
     }
 
@@ -204,35 +241,45 @@
         @media screen and (min-width:480px) {
             text-align: center;
         }
+
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
     }
 
     .footer__input {
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: rgba(33, 150, 243, 0);
+
         @media screen and (min-width:480px) {
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
             width: 450px;
             height: 50px;
             margin-bottom: 20px;
         }
 
         @media screen and (min-width:768px) {
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
             width: 450px;
             height: 50px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: rgba(33, 150, 243, 0);
         }
 
         @media screen and (min-width: 1200px) {
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: rgba(33, 150, 243, 0);
+            width: 358px;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            margin-bottom: 0px;
         }
     }
 
     .footer__button--subscribe {
+        height: 50px;
+        width: 200px;
         display: flex;
         border-radius: 4px;
         font-weight: 700;
@@ -249,9 +296,10 @@
         cursor: pointer;
         margin: 0 auto;
 
-        @media screen and (min-width:768px) {
-            width: 200px;
-            height: 50px;
+        @media screen and (min-width:1200px) {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
         }
 
     }
@@ -271,6 +319,18 @@
             position: absolute;
             top: 247px;
             left: 166px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 570px;
+            height: 86px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            @include flex_jcc;
+            align-items: center;
+            top: 72px;
+            left: 710px;
         }
     }
 

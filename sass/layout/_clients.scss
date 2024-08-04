@@ -9,6 +9,8 @@
     @media screen and (min-width:768px) {}
 
     @media screen and (min-width: 1200px) {
+        display: flex;
+        min-width: 1200px;
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -23,22 +25,25 @@
     }
 
     .clients-list {
-        @include flex_ww;
 
         @media screen and (min-width:480px) {
             width: 450px;
             height: 336px;
             gap: 30px;
-
+            @include flex_ww;
         }
 
         @media screen and (min-width:768px) {
             width: 738px;
             height: 277px;
             gap: 30px;
+            @include flex_ww;
         }
 
-        @media screen and (min-width: 1200px) {}
+        @media screen and (min-width: 1200px) {
+            width: 1170px;
+            height: 184px;
+        }
 
 
         &__item {
@@ -55,7 +60,10 @@
                 height: 92px;
             }
 
-            @media screen and (min-width: 1200px) {}
+            @media screen and (min-width: 1200px) {
+                width: 170px;
+                height: 92px;
+            }
 
             @include flex;
             fill: #AFB1B8;
