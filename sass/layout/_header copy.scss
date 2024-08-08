@@ -51,8 +51,6 @@
         font-size: 26px;
         margin-right: 284px;
 
-
-
         @media screen and (min-width:768px) {
             margin-right: 88px;
         }
@@ -78,39 +76,10 @@
         }
     }
 
-    .header__input {
-        display: none;
-    }
-
-    .header__input:checked~.label>.label__button-opened {
-        display: none;
-
-    }
-
-    .label {
-        position: relative;
-
-        @media screen and (min-width:768px) {
-            display: none;
-        }
-    }
-
-    .label__button-opened {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
-    .label__button-closed {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
     .header-list {
 
 
-        @media screen and (max-width:767px) {
+        @media screen and (min-width:480px) {
             display: none;
         }
 
@@ -201,7 +170,7 @@
         display: flex;
         gap: 30px;
 
-        @media screen and (max-width:767px) {
+        @media screen and (min-width:480px) {
             display: none;
         }
 
