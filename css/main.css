@@ -316,6 +316,11 @@ body {
 }
 
 /*? portfolio-main */
+.main {
+  min-width: 320px;
+  width: 100%;
+}
+
 .hero {
   width: 100%;
   min-width: 320px;
