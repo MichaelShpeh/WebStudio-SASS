@@ -167,6 +167,51 @@ body {
   top: 0px;
   left: 0px;
 }
+.header .label-list {
+  width: 100px;
+  height: 700px;
+  position: relative;
+}
+.header .label-list__item {
+  position: absolute;
+  left: 40px;
+}
+.header .label-list__item:nth-child(1) {
+  top: 0px;
+}
+.header .label-list__item:nth-child(2) {
+  top: 80px;
+}
+.header .label-list__item:nth-child(3) {
+  top: 160px;
+}
+.header .label-list__item:nth-child(4) {
+  top: 520px;
+}
+.header .label-list__item:nth-child(5) {
+  top: 590px;
+}
+.header .label-list__item:nth-child(6) {
+  top: 780px;
+}
+.header .label-list__title {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.header .label-list__phone {
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.header .label-list__email {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
 @media screen and (max-width: 767px) {
   .header .header-list {
     display: none;
