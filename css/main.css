@@ -146,6 +146,15 @@ body {
 .header .header__input {
   display: none;
 }
+.header .header__input:checked ~ .label > .label__button-opened {
+  display: none;
+}
+.header .header__input ~ .label > .label__button-closed {
+  display: none;
+}
+.header .header__input:checked ~ .label > .label__button-closed {
+  display: block;
+}
 .header .label {
   position: relative;
 }
@@ -166,9 +175,9 @@ body {
 }
 .header .label-list {
   width: 100%;
-  height: 700px;
+  height: 5457px;
   position: relative;
-  background-color: #fff;
+  background: #fff;
 }
 @media (max-width: 767px) {
   .header .label-list {
@@ -225,9 +234,8 @@ body {
 .header .label-list {
   display: none;
 }
-.header input[type=checkbox]:checked ~ .div {
+.header input[type=checkbox]:checked ~ .label-list {
   display: flex;
-  outline: red 2px dashed;
 }
 .header .div {
   display: none;
