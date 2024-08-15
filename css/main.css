@@ -146,9 +146,6 @@ body {
 .header .header__input {
   display: none;
 }
-.header .header__input:checked ~ .label > .label__button-opened {
-  display: none;
-}
 .header .label {
   position: relative;
 }
@@ -168,9 +165,22 @@ body {
   left: 0px;
 }
 .header .label-list {
-  width: 100px;
+  width: 100%;
   height: 700px;
   position: relative;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .header .label-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header .label-list {
+    display: none;
+  }
 }
 .header .label-list__item {
   position: absolute;
@@ -192,9 +202,9 @@ body {
   top: 590px;
 }
 .header .label-list__item:nth-child(6) {
-  top: 780px;
+  top: 680px;
 }
-.header .label-list__title {
+.header .label-list__link {
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
@@ -211,6 +221,20 @@ body {
   font-size: 24px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.header .label-list {
+  display: none;
+}
+.header input[type=checkbox]:checked ~ .div {
+  display: flex;
+  outline: red 2px dashed;
+}
+.header .div {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 .header .social-media-list {
   display: flex;
