@@ -117,6 +117,11 @@ body {
   font-size: 26px;
   margin-right: 284px;
 }
+@media screen and (max-width: 479px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 88px;
@@ -611,12 +616,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 480px) {
-  .images {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .images {
     display: none;
   }
@@ -1108,9 +1108,9 @@ body {
   min-width: 320px;
   background-color: #2F303A;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer {
-    min-width: 480px;
+    min-width: 320px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1129,7 +1129,7 @@ body {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer .foot {
     display: flex;
     flex-direction: column;
@@ -1161,7 +1161,7 @@ body {
   text-align: center;
   color: #2196f3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer .footer__logo {
     margin: 0 auto;
   }
@@ -1182,16 +1182,17 @@ body {
 }
 .footer .address {
   margin-top: 20px;
-  display: flex;
 }
 @media screen and (min-width: 480px) {
   .footer .address {
     flex-direction: column;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .address {
     flex-direction: row;
+    display: flex;
   }
 }
 .footer .location {
@@ -1203,7 +1204,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer .footer-list {
     width: 232px;
     height: 79px;
@@ -1233,7 +1234,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 3200px) {
   .footer .footer-list__item {
     text-align: center;
   }
@@ -1265,7 +1266,7 @@ body {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer .links-list {
     width: 206px;
     height: 80px;
@@ -1327,7 +1328,7 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer .footer__text--sending {
     text-align: center;
   }
@@ -1344,6 +1345,11 @@ body {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
+}
+@media screen and (max-width: 479px) {
+  .footer .footer__input {
+    min-width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .footer .footer__input {
