@@ -430,35 +430,54 @@ body {
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img1.jpg);
   background-size: cover;
   background-color: #2F303A;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m-1x.jpg);
 }
-.hero .heromain {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.hero__title {
-  min-width: 320px;
-  font-family: "Roboto";
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  font-size: 44px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-    height: 84px;
-    font-size: 26px;
-    line-height: 162%;
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-m-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-t-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-t-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-d-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-d-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero .heromain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero__title {
+    min-width: 320px;
+    font-family: "Roboto";
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-size: 44px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 480px) {
   .hero__title {
     width: 360px;
     height: 84px;
@@ -466,66 +485,78 @@ body {
     line-height: 162%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 162%;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .hero__title {
     width: 696px;
   }
 }
-.hero__button {
-  font-family: "Roboto";
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  background-color: #2196F3;
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-  color: #fff;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border: none;
-  cursor: pointer;
-  scale: 1;
-  animation-name: move-of-button;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-@media screen and (min-width: 480px) {
-  .hero__button {
-    width: 200px;
-    height: 50px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero__button {
+    font-family: "Roboto";
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    background-color: #2196F3;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    scale: 1;
+    animation-name: move-of-button;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 480px) {
+  .hero__button {
     width: 200px;
     height: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hero__button {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .hero__button {
     width: 216px;
     height: 50px;
   }
 }
-@keyframes move-of-button {
-  0% {
-    scale: 1;
+@media screen and (min-width: 768px) {
+  @keyframes move-of-button {
+    0% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.1;
+    }
+    100% {
+      scale: 1;
+    }
   }
-  50% {
-    scale: 1.1;
+  .hero__button:active {
+    background: var(--button-color);
+    color: #fff;
   }
-  100% {
-    scale: 1;
-  }
-}
-.hero__button:active {
-  background: var(--button-color);
-  color: #fff;
 }
 
 @media screen and (min-width: 480px) {
@@ -715,6 +746,7 @@ body {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .ourwork-list__item {
     width: 354px;
@@ -756,7 +788,7 @@ body {
 }
 
 .ourwork-list__item:nth-child(1)::before {
-  background-image: url(../svg/antena.svg);
+  background-image: url(../svg/anten.svg);
   content: "";
 }
 
