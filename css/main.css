@@ -213,19 +213,25 @@ body {
   top: 160px;
 }
 .header .label-list__item:nth-child(4) {
-  top: 520px;
+  top: 400px;
 }
 .header .label-list__item:nth-child(5) {
-  top: 590px;
+  top: 460px;
 }
 .header .label-list__item:nth-child(6) {
-  top: 680px;
+  top: 560px;
 }
 .header .label-list__link {
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.header .label-list__link--curent {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .header .label-list__phone {
   font-weight: 500;
@@ -257,20 +263,30 @@ body {
   justify-content: center;
   align-items: center;
 }
-.header .social-media-list__text {
+.header .social-media-list .social-media-list__item {
+  margin-right: 20px;
+  position: relative;
+}
+.header .social-media-list .social-media-list__item:last-of-type {
+  margin-right: 0px;
+}
+.header .social-media-list .social-media-list__item::after {
+  content: "";
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(-90deg);
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  right: -22px;
+}
+.header .social-media-list .social-media-list__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 122%;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-.header .social-media-list__item::after {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 22px;
-  height: 0px;
-  transform: rotate(-90deg);
-  margin-left: 10px;
-  content: "";
 }
 @media screen and (max-width: 767px) {
   .header .header-list {
