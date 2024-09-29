@@ -174,22 +174,12 @@ body {
 .header .label {
   position: relative;
   margin-top: 10px;
-  margin-right: 40px;
+  margin-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .header .label {
     display: none;
   }
-}
-.header .label__button-opened {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.header .label__button-closed {
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 .header .label-list {
   width: 100%;
