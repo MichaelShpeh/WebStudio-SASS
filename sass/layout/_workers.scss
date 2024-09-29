@@ -6,6 +6,7 @@
     .workers-list {
 
         @media screen and (min-width:768px) {
+            width: 738px;
             @include flex_ww;
             gap: 30px;
         }
