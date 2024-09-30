@@ -102,7 +102,11 @@ body {
 .header .nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header .nav {
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 768px) {
   .header .nav {
@@ -120,14 +124,7 @@ body {
   }
 }
 .header .header__logo {
-  min-width: 134px;
-  min-height: 28px;
-}
-@media screen and (min-width: 768px) {
-  .header .header__logo {
-    min-width: 134px;
-    min-height: 28px;
-  }
+  margin-left: 15px;
 }
 @media screen and (min-width: 1200px) {
   .header .header__logo {
@@ -391,14 +388,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .header .list {
-    flex-wrap: wrap;
-    flex-direction: column;
     position: absolute;
-    right: 0px;
+    right: 20px;
   }
 }
 @media screen and (min-width: 1200px) {

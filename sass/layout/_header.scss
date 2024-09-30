@@ -26,7 +26,10 @@
     .nav {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
+        }
 
         @media screen and (min-width: 768px) {
             position: relative;
@@ -42,14 +45,7 @@
     }
 
     .header__logo {
-        min-width: 134px;
-        min-height: 28px;
-
-
-        @media screen and (min-width:768px) {
-            min-width: 134px;
-            min-height: 28px;
-        }
+        margin-left: 15px;
 
         @media screen and (min-width: 1200px) {
             min-width: 145px;
@@ -268,6 +264,7 @@
             min-width: 288px;
             @include flex_aic;
             display: flex;
+
         }
 
         @media screen and (min-width: 1200px) {
@@ -359,13 +356,8 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-        }
-
-        @media screen and (max-width: 1199px) {
-            flex-wrap: wrap;
-            flex-direction: column;
             position: absolute;
-            right: 0px;
+            right: 20px;
         }
 
         @media screen and (min-width: 1200px) {
