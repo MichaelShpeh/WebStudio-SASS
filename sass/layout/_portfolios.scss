@@ -1,3 +1,12 @@
+.all {
+    padding-top: 120px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+}
+
 .portfolios-list {
 
 
@@ -6,6 +15,7 @@
         height: 91px;
         @include flex_ww;
         gap: 8px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width:768px) {
@@ -73,20 +83,7 @@
     }
 }
 
-.all {
 
-
-    @media screen and (min-width:480px) {
-        margin-bottom: 60px;
-    }
-
-    @media screen and (min-width:768px) {}
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 94px;
-        margin-bottom: 94px;
-    }
-}
 
 .works-list {
 
