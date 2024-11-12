@@ -863,6 +863,14 @@ body {
   }
 }
 
+.portfolios-list {
+  width: 100%;
+  height: 91px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
 @media screen and (min-width: 480px) {
   .portfolios-list {
     width: 326px;
